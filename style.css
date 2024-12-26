@@ -1,0 +1,195 @@
+:root{
+    --gray-100: #f0f6fc;
+    --gray-200: #c9d1d9;
+    --gray-400: #8b949e;
+    --gray-500: #f0f6fc1a;
+  
+    --black-400: #30363d;
+    --black-500: #21262d;
+    --black-600: #161b22;
+    --black-700: #0d1117;
+    --black-800: #010409;
+  
+    --green-300: #2ea043;
+    --green-400: #238636;
+  
+    --white: #fff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:var(--black-800);
+
+}
+body, button, input{
+color: var(--gray-200);
+}
+button{
+    cursor: pointer;
+}
+li{
+    list-style-type: none;
+}
+
+.header-container{
+    background-color: var(--black-600);
+    box-shadow:0 0 40px var(--green-300);
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin:0 auto;
+    padding: 16px;
+    
+}
+.main-title{
+    color: var(--gray-100);
+}
+.logo{
+    width: 10vw;
+    height: 15vh;
+    border-radius: 100%;
+    box-shadow:0 0 40px var(--green-300);
+}
+
+
+main{
+    max-width: 100%;
+    margin: 0 auto 80px ;
+    padding: 0 16px;
+   
+}
+.forms{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    height: 48px;
+    width: 100%;
+    
+}
+
+.username-input{
+    width: 240px;
+    height: 10vh;
+    background-color: var(--black-600);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    padding: 2rem;
+  
+    
+}
+button[type="submit"]{
+    background-color: var(--green-400);
+    font-weight: bold;
+    color: var(--white);
+
+    border: 1px solid var(--green-400);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    width: 10vw;
+    height: 10vh;
+    transition:  0.3s;
+    
+    
+    
+}
+
+button[type="submit"]:hover{
+    background-color: var(--green-300) ;
+    box-shadow:0 0 40px var(--green-300);
+}
+
+.user-data-conteiner{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+  
+}
+.user-data-contant{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 3rem;
+    
+}
+.user-avatar{
+    border-radius: 50%;
+    width: 140px;
+    height: auto;
+    border: 2px solid var(--gray-200);
+}
+.user-data{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 3rem;
+   
+}
+.user-info{
+    font-size: 18px;
+}
+.user-repo-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:32px;
+
+}
+.user-repo-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  width: 100%;
+}
+.user-repo{
+ background-color: var(--black-700) ;
+ padding: 16px;
+ border: 1px solid var(--black-400);
+ border-radius: 6px;
+}
+.user-repo header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.repo-tittle{
+    font-size: 20px;
+}
+.repo-link{
+    background-color: var(--black-500);
+    color: var(--gray-100);
+    border: 1px solid var(--black-500);
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+.repo-link:hover{
+    background-color: var(--green-300);
+    border-color: var(--black-400);
+}
+.repo-description{
+    margin: 16px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 530px;
+
+}
+
+.hide{
+    display: none;
+
+}
+img{
+    margin-top: 2rem;
+}

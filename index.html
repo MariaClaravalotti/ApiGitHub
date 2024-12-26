@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil GitHub</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-container">
+     <div class="header-content">
+        <h1 class="main-title">Buscar Perfil</h1>
+        <img class="logo" src="./assets/git.png" alt="busca de perfil do git "/>
+     </div>
+    </header>
+    <main>
+        <form class="forms">
+            <input type="text"  placeholder="buscar o nome do usuário" class="username-input"/>
+            <button type="submit">Buscar</button>
+
+        </form>
+
+        <section class="user-data-container  hide" >
+            <div class="user-data-contant">
+                <img src="" alt="img do usuario" class="user-avatar">
+            </div>
+            <div class="user-data">
+                <div class="user-info">
+                  Nome:
+                  <span class="user-name"></span>
+                </div>
+                <div class="user-info">
+                  Username: 
+                  <span class="user-login"></span>
+                </div>
+                <div class="user-info">
+                  Seguidores:
+                  <span class="user-followers"></span>
+                </div>
+                <div class="user-info">
+                  Biografia: 
+                  <span class="user-bio"></span>
+                </div>
+              </div>
+            </div>
+            <div class="user-repo-container">
+                <h2>Repositórios atualizados recentemente</h2>
+        
+                <ul class="user-repo-content">
+                    
+                
+                </ul>
+              </div>
+        </section>
+    </main>
+<script src="script.js" ></script>
+</body>
+</html>
